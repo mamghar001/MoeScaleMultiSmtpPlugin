@@ -19,14 +19,18 @@ The goal is to:
 - Seamless integration with Mautic's email sending workflow
 
 ## Status
-Work in progress. Contributions and suggestions are welcome!
+This repository contains the source code of the **MoeScale Multi SMTP Bundle**.
+Copy the `MoeScaleMultiSmtpBundle` directory from this repo into your Mautic
+`plugins` directory and run `php bin/console cache:clear` followed by
+`php bin/console mautic:plugins:reload`.
 
-## Getting Started
-1. Clone this repository
-2. Follow the instructions (to be added) for installing the plugin into your Mautic instance
+In Mautic's configuration set the **Mailer DSN** to `multismtp://default`.
+Add your SMTP server details into the `smtp_servers` table and emails will be
+evenly rotated across them.
 
 ## Inspiration
 Inspired by the `MauticEvenlyDistributesSmtpBundle`, this plugin aims to provide a scalable, database-driven approach to SMTP server distribution in Mautic.
 
 ## License
 MIT
+
