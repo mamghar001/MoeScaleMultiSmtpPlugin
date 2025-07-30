@@ -1,0 +1,11 @@
+{
+    "name": "moescale/multi-smtp-bundle",
+    "description": "Dynamic SMTP rotation for Mautic v6",
+    "type": "mautic-plugin",
+    "extra": {
+        "install-directory-name": "MoeScaleMultiSmtpBundle"
+    },
+    "require": {
+        "mautic/core-lib": "^7.0"
+    }
+}
